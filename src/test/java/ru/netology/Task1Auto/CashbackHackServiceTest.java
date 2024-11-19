@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class CashbackHackServiceTest{
 
     @Test
-    void calculateCashbackNGPositive() {
+    void calculateCashbackTestNGPositive() {
         CashbackHackService cashback = new CashbackHackService();
         int amount = 700;
 
@@ -19,7 +19,7 @@ public class CashbackHackServiceTest{
     }
 
     @Test
-    void calculateCashbackNGNegative() {
+    void calculateCashbackTestNGNegative() {
         CashbackHackService cashback = new CashbackHackService();
         int amount = 1000;
 
