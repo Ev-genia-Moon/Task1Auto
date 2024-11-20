@@ -12,9 +12,19 @@ public class CashbackHackServiceNGTest {
         int actual = service.remain(amount);
         int expected = 300;
 
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
 
-    //@Test
+    @Test
+    void CashbackHackServiceNGNegative(){
+        CashbackHackService service = new CashbackHackService();
+        int amount = 1000;
+
+        int actual = service.remain(amount);
+        int expected = 0;
+
+        assertEquals(actual, expected);
+    }
+
 }
 
